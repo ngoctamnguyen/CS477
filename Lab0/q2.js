@@ -12,7 +12,12 @@ class Student {
     }
 
     save(){
-        db.push({id: this.id, fname: this.fname, lname: this.lname});
+        const indx = db.findIndex(item => item.id == this.id);
+        if (indx >= 0) {
+            throw new Error(`The student id ${this.id} already exist`);
+        } else {
+            db.push({id: this.id, fname: this.fname, lname: this.lname});
+        }
     }
 
     edit(){
