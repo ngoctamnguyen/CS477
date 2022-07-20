@@ -26,7 +26,8 @@ function exec(fn) {
     return obj;
 }
 
-exec(slow).done(function (data) { console.log(data); })
+exec(slow)
+    .done(function (data) { console.log(data); })
     .fail(function (err) { console.log("Error: " + err); });
 
 

@@ -38,4 +38,4 @@ function exec(fn) {
 }
 
 exec(slow).done(function (data) { console.log(data); })
-    .fail(function (err) { console.log("Error: " + err); }); 
+        .fail(function (err) { console.log("Error: " + err); }); 
