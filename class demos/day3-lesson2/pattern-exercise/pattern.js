@@ -10,3 +10,4 @@ module.exports.lname = 'Jark';
 exports.getName = function(){
     console.log('getName');
 }
+
