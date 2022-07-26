@@ -4,7 +4,7 @@ class Person {
     }
     getName() {
         console.log(this.name);
-    }
+    }   
 }
 
 module.exports = new Person('John Smith');
