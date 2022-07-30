@@ -1,0 +1,42 @@
+[
+    {
+    "id": "1",
+    "title": "Dashboard",
+    "publishedDate": "3/20/2022",
+    "author": "Steve Wexler"
+},
+{
+    "id": 2,
+    "title": "Ten Pivotal Moments in the Making ",
+    "ISBN": "9780393609318",
+    "publishedDate": -2021,
+    "author": "Martha Ackmann"
+},
+{
+    "id": 3,
+    "title": "The True Story of Thirteen Women",
+    "ISBN": "9780375758935",
+    "publishedDate": -2020,
+    "author": "Lynn Sherr"
+},
+{
+    "id": 4,
+    "title": "Birds of California",
+    "ISBN": "9780063159150",
+    "publishedDate": -2019,
+    "author": "Katie Cotugno"
+},
+{
+    "id": "5",
+    "title": "First Grade",
+    "publishedDate": "5/20/2022",
+    "author": "MIU"
+},
+{
+    "id": 6,
+    "title": "Second Grade",
+    "ISBN": "22222",
+    "publishedDate": "1/31/2022",
+    "author": "MIU"
+}
+]

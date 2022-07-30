@@ -4,7 +4,7 @@ window.onload = function(){
 
 function fetchBooks(){
     fetch('http://localhost:3000/books')
-        .then(response => response.json())
+        .then(response => response.json())  //using promise
         .then(books => displayBooks(books))
         .catch(err => {
             console.log('inside err');

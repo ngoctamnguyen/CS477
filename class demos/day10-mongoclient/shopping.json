@@ -1,0 +1,6 @@
+[
+    { "id": 1, "title": "HP", "price": 299, "description": "HP is good" },
+    { "id": 2, "title": "DELL", "price": 299, "description": "DELL is good" },
+    { "id": 3, "title": "ACER", "price": 299, "description": "ACER is good" },
+    { "id": 4, "title": "COMPAQ", "price": 299, "description": "COMPAQ is good" },
+]
