@@ -13,8 +13,6 @@ app.all('/product', (req, res) => {
 })
 
 
-
-
 app.get('/', (req, res, next) => {
     console.log('1....');
     next();
@@ -39,7 +37,7 @@ app.get('/search', (req, res, next) => {
 
 app.get('/users/:userid/posts/:postid', (req, res, next) => {
     console.log(req.params);
-    res.send(`UserId: ${req.params.uid}, postId:: ${req.params.pid}`);
+    res.send(`UserId: ${req.params.userid}, postId:: ${req.params.postid}`);
 });
 
 

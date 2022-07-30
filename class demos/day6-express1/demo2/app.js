@@ -30,6 +30,7 @@ app.use('/add-product', (req, res, next)=> {
 
 
 app.use('/save-product', (req, res, next) => {
+    console.log(req.body);
     res.send(JSON.stringify(req.body));
 });
 

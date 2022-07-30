@@ -1,3 +1,5 @@
-const {getName} = require('./pattern2');
+const getName = require('./pattern2');
 console.log(getName);
-getName();
+getName.getName()
+getName.getHeight()
+//getName();

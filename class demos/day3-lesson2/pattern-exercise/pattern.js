@@ -1,4 +1,5 @@
 exports.firstname = 'John';
+
 exports = {
     lastname: 'Smith'
 }

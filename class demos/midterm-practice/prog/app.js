@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 
 //place code below
 app.get('/', (req, res, next) => {
@@ -23,7 +23,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.post('/signup', (req, res, next) => {
-    if(req.body.firstname && req.body.lastname) {
+    if (req.body.firstname && req.body.lastname) {
         //save to file
 
         fs.appendFile(path.join(__dirname, 'database.txt'), `,${req.body.firstname}=${req.body.lastname}`, (err) => {

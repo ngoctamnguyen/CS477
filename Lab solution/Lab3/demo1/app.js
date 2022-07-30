@@ -30,10 +30,6 @@ app.use('/warning', (req, res, next) => {
 
 
 app.use('/processLogin', (req, res, next) => {
-    console.log(req.body);
-    console.log(req.hostname);
-    console.log(req.ip);
-    console.log(req.method);
     if(req.body.username === 'admin' && req.body.password=== '123') {
         res.redirect('/user?username='+ req.body.username);       
     } else{
@@ -47,6 +43,7 @@ app.use((req, res, next) => {
         req.username = req.query.username;
         next();
     } else {
+        console.log('Iam first');
         res.redirect('/login');
     }
 });

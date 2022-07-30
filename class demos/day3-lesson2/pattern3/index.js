@@ -1,5 +1,5 @@
 const person = require('./pattern');
-console.log(person);
+person.getName();
 person.name = 'Edward Hello';
 person.getName();
 
