@@ -21,7 +21,7 @@ module.exports = class Product {
     }
 
     static getAll() {
-        return getDB().collection('products').find().toArray();
+        return getDB().collection('products').find().toArray();//return Promise, 
     }
 
     static getById(id) {

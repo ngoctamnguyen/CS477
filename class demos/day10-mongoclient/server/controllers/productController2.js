@@ -1,7 +1,7 @@
 const Product = require('../models/product2');
 
-exports.getAll = (req, res, next) => {
-    Product.getAll()
+exports.getAll = (req, res, next) => { 
+    Product.getAll()              //getAll returns Promise -> use .then to catch data returned
         .then(prods => {
             res.json(prods);
         })

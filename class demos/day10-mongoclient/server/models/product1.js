@@ -20,7 +20,7 @@ module.exports = class Product {
     }
 
     static getAll() {
-        return mongoConnect(client => {
+        return mongoConnect(client => {  //return Promise
             return client.db('shopping').collection('products').find().toArray();
         });   
     }

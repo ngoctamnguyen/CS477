@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const productRouter = require('./routes/productRouter');
-const {mongoConnect} = require('./utils/database3');
+const {mongoConnect} = require('./utils/database1');
 
 const app = express();
 
