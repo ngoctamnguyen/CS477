@@ -1,0 +1,70 @@
+[
+    {
+        "userId": "60001",
+        "username": "msd1",
+        "password": "12345",
+        "email": "mds1@miu.org",
+        "photo": "link",
+        "following": [
+            {
+                "userId": "6002",
+                "date": "1/1/2022"
+            },
+            {
+                "userId": "6003",
+                "date": "2/1/2022"
+            }
+        ]
+    },
+    {
+        "userId": "60002",
+        "username": "tam",
+        "password": "12345",
+        "email": "tam@miu.org",
+        "photo": "link",
+        "following": [
+            {
+                "userId": "6001",
+                "date": "5/15/2022"
+            },
+            {
+                "userId": "6004",
+                "date": "2/1/2022"
+            }
+        ]
+    },
+    {
+        "userId": "60003",
+        "username": "munkh",
+        "password": "12345",
+        "email": "munkh@miu.org",
+        "photo": "link",
+        "following": [
+            {
+                "userId": "6002",
+                "date": "6/15/2022"
+            },
+            {
+                "userId": "6001",
+                "date": "2/1/2022"
+            }
+        ]
+    },
+    {
+        "userId": "60004",
+        "username": "khelifa",
+        "password": "12345",
+        "email": "khelifa@miu.org",
+        "photo": "link",
+        "following": [
+            {
+                "userId": "6001",
+                "date": "6/01/2022"
+            },
+            {
+                "userId": "6002",
+                "date": "2/1/2022"
+            }
+        ]
+    }
+]
