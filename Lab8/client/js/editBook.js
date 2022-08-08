@@ -1,11 +1,15 @@
-window.onload = function(){
-    let url = new URL(location.href);
-    const bookId = url.searchParams.get('id');
-    console.log(bookId);
-    fetchBookById(bookId);
-    document.getElementById('edit-button').onclick = function(event) {
-        event.preventDefault();
-        editBookById(bookId);
+window.onload = function () {
+    if(sessionStorage.getItem('accessToken')) {
+        let url = new URL(location.href);
+        const bookId = url.searchParams.get('id');
+        console.log(bookId);
+        fetchBookById(bookId);
+        document.getElementById('edit-button').onclick = function(event) {
+            event.preventDefault();
+            editBookById(bookId);
+        }
+    } else {
+        window.location = 'index.html';
     }
 }
 

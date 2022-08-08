@@ -1,5 +1,9 @@
-window.onload = function(){
-    document.getElementById('add-button').onclick = addBook;
+window.onload = function () {
+    if(sessionStorage.getItem('accessToken')) {
+        document.getElementById('add-button').onclick = addBook;
+    } else {
+        window.location = 'index.html';
+    }
 }
 
 async function addBook(event){

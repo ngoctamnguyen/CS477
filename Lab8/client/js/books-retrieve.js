@@ -1,5 +1,10 @@
-window.onload = function(){
-    fetchBooks();
+window.onload = function () {
+    if(sessionStorage.getItem('accessToken')) {
+        fetchBooks();
+        document.getElementById("logout").onclick = logout;
+    } else {
+        window.location = 'index.html';
+    }
 }
 
 function fetchBooks(){
